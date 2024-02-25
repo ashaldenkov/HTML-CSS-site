@@ -1,17 +1,19 @@
-$bgColor: #24292e;
-$text: #fff;
-
+$bgColor: #f8f8f8;
+$text: #1b1c21;
 @font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
+  font-family: 'TT Lakes Regular';
+  src: url('TTLakes-Regular.eot');
+  src: url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('TTLakes-Regular.woff') format('woff'),
+    url('TTLakes-Regular.ttf') format('truetype');
   font-weight: normal;
-  font-style: italic;
+  font-style: normal;
 }
 
 body {
-  padding: 1rem;
+  padding: 0;
   margin: 0;
-  font-family: Comic, sans-serif;
+  font-family: TT Lakes Regular, sans-serif;
   background-color: $bgColor;
   color: $text;
 }
