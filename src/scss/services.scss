@@ -1,0 +1,22 @@
+.top-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 88px;
+  width: 100%;
+}
+
+.side-menu {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.top-menu__button {
+  display: flex;
+  align-items: center;
+}
+
+.side-menu__buttons {
+  display: flex;
+}
