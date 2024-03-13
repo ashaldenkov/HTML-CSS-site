@@ -1,0 +1,71 @@
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback {
+  background-color: white;
+  width: 100%;
+  max-width: 440px;
+  height: 100%;
+  position: fixed;
+  z-index: 5;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.feedback__close-button {
+  padding-bottom: 40px;
+}
+
+.feedback__title {
+  font-family: TT Lakes Bold;
+  font-size: 24px;
+  line-height: 32px;
+  padding-bottom: 24px;
+  position: relative;
+}
+
+.feedback__input {
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  font-family: TT Lakes Medium;
+}
+
+.feedback__input-message {
+  height: 118px;
+  vertical-align: top;
+}
+
+.feedback__disclaimer {
+  color: #7e7e82;
+  font-size: 14px;
+}
+
+.feedback__link {
+  color: #ff3e79;
+}
+
+.feedback__form > input[type='submit'] {
+  margin-left: auto;
+  margin-top: 16px;
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: url('/src/img/Send.png') no-repeat;
+  width: 136px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.feedback__highlight {
+  position: absolute;
+  left: -16px;
+  top: -4px;
+}

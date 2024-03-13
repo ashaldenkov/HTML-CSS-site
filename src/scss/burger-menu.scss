@@ -1,0 +1,117 @@
+.burger-menu {
+  width: fit-content;
+}
+.side-menu {
+  font-family: TT Lakes Medium, sans-serif;
+  line-height: 24px;
+  display: none;
+  align-items: flex-start;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 440px;
+  height: 100%;
+  background-color: white;
+  z-index: 5;
+  padding: 19px 16px 32px 16px;
+  box-shadow: 16px 0 52px #0e185033, -2px 0 4px #454f7e05;
+}
+
+.appear {
+  animation: Apperarance 0.3s ease-in;
+}
+
+.dissapear {
+  animation: Dissapear 0.3s ease-in forwards;
+}
+
+@keyframes Apperarance {
+  from {
+    left: -380px;
+    top: 0;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes Dissapear {
+  from {
+    left: 0;
+  }
+  to {
+    left: -380px;
+  }
+}
+
+.side-menu__buttons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.top-menu__link {
+  background-color: white;
+  border: none;
+}
+
+.side-menu__logo-button {
+  padding-left: 16px;
+}
+
+.side-menu__search-button {
+  margin-left: auto;
+}
+
+.contacts {
+  margin-top: auto;
+}
+
+.options {
+  position: relative;
+}
+
+.options__item {
+  padding-top: 24px;
+}
+
+.options__highlight {
+  position: absolute;
+  left: -16px;
+  top: 68px;
+}
+
+li .options__link--active,
+.contacts__lang-list--active {
+  color: #7e7e82;
+}
+
+.options__link:hover {
+  opacity: 60%;
+  color: red;
+  transition-duration: 0.5s;
+}
+
+.contacts__icons {
+  margin-bottom: 16px;
+  height: 40px;
+}
+
+.contacts__number {
+  margin-top: 8px;
+  line-height: 32px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contacts__languague {
+  margin-top: 8px;
+}
+
+.contacts__chat-button,
+.contacts__call-button {
+  margin-right: 16px;
+}

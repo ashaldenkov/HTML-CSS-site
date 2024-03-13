@@ -53,6 +53,11 @@ module.exports = {
 
       // Подключаем картинки из css
       {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+      },
+
+      {
         test: /\.(svg|png|jpg|jpeg|webp)$/,
         use: [
           {

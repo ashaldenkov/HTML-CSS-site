@@ -1,0 +1,34 @@
+.top-menu {
+  display: flex;
+  align-items: center;
+  height: 88px;
+  width: 100%;
+  background-color: white;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.top-menu__link:first-child {
+  margin-left: 16px;
+}
+
+.top-menu__link:last-child {
+  margin-right: 16px;
+}
+
+.logo {
+  flex: 1 1 auto;
+}
+
+.top-menu__button {
+  display: flex;
+  align-items: center;
+}
+
+.side-menu__buttons {
+  display: flex;
+}
+
+.top-menu__pc-text {
+  display: none;
+}

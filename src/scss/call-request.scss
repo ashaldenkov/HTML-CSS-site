@@ -1,0 +1,97 @@
+.call-request__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.call-request {
+  background-color: white;
+  width: 100%;
+  max-width: 425px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.appeared {
+  animation: ModalAppear 0.3s ease-in;
+}
+
+.dissapeared {
+  animation: ModalDissapear 0.3s ease-in forwards;
+}
+
+@keyframes ModalAppear {
+  from {
+    right: -440px;
+    top: 0;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes ModalDissapear {
+  from {
+    right: 0;
+  }
+  to {
+    right: -440px;
+  }
+}
+
+.call-request__close-button {
+  padding-bottom: 40px;
+}
+
+.call-request__title {
+  font-family: TT Lakes Bold;
+  font-size: 24px;
+  line-height: 32px;
+  padding-bottom: 24px;
+  position: relative;
+}
+
+.call-request__input {
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 16px;
+}
+
+.call-request input {
+  padding-left: 16px;
+  font-family: TT Lakes Medium;
+}
+
+.call-request__disclaimer {
+  color: #7e7e82;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.call-request__link {
+  color: #ff3e79;
+}
+
+.call-request__form > input[type='submit'] {
+  margin-left: auto;
+  margin-top: 16px;
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: url('/src/img/Send.png') no-repeat;
+  width: 136px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.call-request__highlight {
+  position: absolute;
+  left: -16px;
+  top: -4px;
+}
